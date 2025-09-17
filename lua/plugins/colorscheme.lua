@@ -1,17 +1,18 @@
 return {
 
-  --{
-  --"folke/tokyonight.nvim",
-  --lazy = true,
-  -- opts = { style = "night" },
-  -- },
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = { style = "night" },
+  },
+  --
+  { "ellisonleao/gruvbox.nvim" },
 
   {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
     opts = {
-      flavor = "latte",
       integrations = {
         aerial = true,
         alpha = true,
@@ -57,7 +58,7 @@ return {
         optional = true,
         opts = function(_, opts)
           if (vim.g.colors_name or ""):find("catppuccin") then
-            opts.highlights = require("catppuccin.groups.integrations.bufferline").get()
+            opts.highlights = require("catppuccin.groups.integrations.bufferline").get_theme()
           end
         end,
       },
@@ -65,25 +66,9 @@ return {
   },
 
   {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, {
-        function()
-          return "😄"
-        end,
-      })
-    end,
-  },
-
-  -- or you can return new options to override all the defaults
-  {
-    "nvim-lualine/lualine.nvim",
-    event = "VeryLazy",
-    opts = function()
-      return {
-        --[[add your custom lualine config here]]
-      }
-    end,
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "tokyonight",
+    },
   },
 }

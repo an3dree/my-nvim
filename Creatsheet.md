@@ -3,24 +3,24 @@
 ## 🔹 Buffers 
  - Próxima ava -> `]b`
  - Aba anterior -> `[b`
- - Alternar última ava usada -> `<leader><Tab>`
- - Fechar aba atual -> `<leader>bf`
- - Reabir último buffer fechado -> `<leader>bu`
- - Listar buffers -> `<leader>bb`
+ - Fechar buffers a esquerda  -> `<leader>bl`
+ - Fechar buffers a direita -> `<leader>br`
+ - Pin -> `<leader>bp`
+ - Fechar buffers não pinados -> `<leader>bP`
 
 
  ---
 
 ## 🔹 Splits
- - Split vertial -> `<leader>sv`
- - Split horizontal -> `<leader>sh`
- - Mover para split à esquerda -> `Ctrl-h`
- - Mover para split à direita -> `Ctrl-l`
- - Mover para split abaixo -> `Ctrl-j`
- - Mover para split acima -> `Ctrl-k`
+ - Split vertical -> `<leader>wv`
+ - Split horizontal -> `<leader>wh`
+ - Mover para split à esquerda -> `Ctrl-wh`
+ - Mover para split à direita -> `Ctrl-wl`
+ - Mover para split abaixo -> `Ctrl-wj`
+ - Mover para split acima -> `Ctrl-wk`
  - Fechar split -> `:q`
  
- ---
+ 
 
 ## 🔹 Folding
  - Minimizar bloco -> `zc`
@@ -48,7 +48,7 @@
 
  --- 
 
-## 🔹 Úteis
- - Comando rápido -> `<leader>:`
+## 🔹
+ - Comando rápido -> `<leader>
  - Explorador de arquivos -> `<leader>e` ou `:Ex`
  - Comentar linha/bloco -> `gcc` linha / `gc` seleção

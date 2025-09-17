@@ -21,6 +21,7 @@ dap.configurations.cs = {
     program = function()
       return dotnet.build_dll_path()
     end,
+    console = "integratedConsole",
     -- justMyCode = false,
     -- stopAtEntry = false,
     -- -- program = function()

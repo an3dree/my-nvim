@@ -4,6 +4,16 @@ This settings are based on [LazyVim](https://github.com/LazyVim/LazyVim) starter
 
 ### Installation
 
+- Backup current Neovim files:
+
+```
+mv ~/.consig/nvim{,.bkp}
+
+mv ~/.local/share/nvim/{,.bkp}
+mv ~/.local/state/nvim/{,.bkp}
+mv ~/.cache/nvim{,.bkp}
+```
+
 - Clone the repo
 
 ```

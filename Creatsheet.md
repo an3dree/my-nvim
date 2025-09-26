@@ -1,3 +1,8 @@
+# Vim - Comands and Motions?
+
+## Utils
+ - Desfazer -> `u`
+
 # 📝 LazyVim – Cheatsheet de Atalhos
 
 ## 🔹 Buffers 
@@ -35,6 +40,7 @@
  - Buscar texto no projeto -> `<leader>fg`
  - Buscar buffers abertos -> `<leader>fb`
  - Buscar ajuda -> `<leader>fh`
+ - Search (CR f) -> `:/texto`
 
  --- 
 
@@ -52,3 +58,16 @@
  - Comando rápido -> `<leader>
  - Explorador de arquivos -> `<leader>e` ou `:Ex`
  - Comentar linha/bloco -> `gcc` linha / `gc` seleção
+
+---
+
+## Plugins
+
+### Todo Comments
+ - :TodoQuickFix
+ - :TodoLocList
+  - cwd -> Especifica o diretorio:
+    `:TodoTelescope cwd=~/workspace/project`
+  
+  - keywords -> Filtra os resultador por keywords separads por vírgula
+    `:TodoTelescope keywords=TODO,FIX,HACK`

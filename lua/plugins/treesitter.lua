@@ -3,6 +3,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
+      lazy = true,
       ensure_installed = {
         "c_sharp",
         "css",
